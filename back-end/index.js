@@ -12,6 +12,10 @@ const io = require('socket.io')(http, {
   }
 });
 
+require('./utils/socket')(io);
+
+app.get('/', () => console.log('Ok'))
+
 http.listen(3001, () => {
   console.log('Online na 3001')
 })
