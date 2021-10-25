@@ -1,18 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Chat from './components/chat';
 
 function App() {
   return (
     <div className="App">
       <h1>Mural de Depoimentos</h1>
       <div className="container-mural">
-
+      <Chat />
       </div>
-      <form action="">
-        <input type="text" className="input-name" />
-        <input type="text" className="inputmessage" />
-        <button className="send-button">Send</button>
-      </form>
+  
     </div>
   );
 }

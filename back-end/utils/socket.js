@@ -1,5 +1,5 @@
 module.exports = (io) => io.on('connection', (socket) => {
-  socket.emit('data', () => {
-    console.log('Bem vindo');
+  socket.on('message', ({ name, message }) => {
+    console.log(name, message);
   });
 });
